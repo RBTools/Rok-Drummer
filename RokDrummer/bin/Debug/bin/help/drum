@@ -1,0 +1,114 @@
+Rok Drummer: How to Use
+
+Rok Drummer was created as a proof of concept to answer the question: could I interpret the signals from my Xbox 360 wireless drumset on my PC and make it behave like an e-kit of sorts? With that in mind, everything else that came after was just an afterthought and don't take it too seriously.
+
+As of now, Rok Drummer is only confirmed to work with the following:
+
+- Xbox 360 Rock Band 1 wired drums
+- Xbox 360 Rock Band 2 / Rock Band 3 / The Beatles: Rock Band wireless drums connected using Microsoft's adapter
+- Electronic drum kits connected using the Xbox 360 or PlayStation 3 MIDI PRO Adapters (MPA)
+- PS3 Guitar Hero 5 wireless drums
+
+If you can confirm that it works with the any other type of kit not mentioned above, please let me know! If you have one of those drumsets and they don't work off the bat, I might be able to add support with your help - send me a message!
+
+Rok Drummer includes five drum kits - the same five used in Rock Band 3's Practice Mode. If you want to use your own kit sounds, make a folder under the /kits/ subfolder and put your samples in there - follow the naming format of the existing kits. Rok Drummer will pick up all kits at runtime and you can select between them at any point by choosing from the dropdown list of kits or by pressing left and right on your drums.
+
+
+HOW TO PLAY
+
+You have three ways to play:
+
+1. Use your drumset - this one should be obvious - just flail around your drums like normal people do (right?) and Rok Drummer should play along - Rok Drummer allows you to use a separate flam sample - this is activated by hitting both the Snare and the Yellow Tom
+2. Use your mouse - you can click on any pad, cymbal or pedal to play its sample
+3. Use your keyboard - using the following key bindings, you can play the entire drumset - key bindings can be changed by editing the drummer.config file in the /bin folder - you might be able to use a Wii drumset if you map your Wii controller's input to keyboard keys - look it up!
+
+While using any of these control methods, you can move forwards and backwards in time by using your mouse's scroll wheel
+
+
+KEY BINDINGS
+
+Snare - A
+Flam - W
+Yellow Tom - S
+Blue Tom - D
+Green Tom - F
+Yellow Cymbal - K
+Blue Cymbal - L
+Green Cymbal - ;
+Bass Pedal - Space Bar
+Hi Hat Pedal / 2x Bass Pedal - J
+Previous Kit - Page Up
+Next Kit - Page Down
+Drum Volume Up - Numpad +
+Drum Volume Down - Numpad -
+
+
+PLAY ALONG MODE
+
+You can click on Options -> Play-along mode or press F5 or drag/drop a CON/LIVE file anywhere on Rok Drummer and Play Along Mode will be enabled
+
+Once you've loaded a song that Rok Drummer can play, it will tell you that it's ready - press Play and the audio will begin playing and the Expert chart will be displayed - keep in mind this is my best attempt at displaying the chart accurately, but it is NOT accurate enough to test songs with - continue to test in game!
+
+You can choose between Expert, Hard, Medium, and Easy charts (if they are charted) by selecting from the chart selection dropdown - Drum Rokker adjusts in real time and the correct chart is displayed without having to stop playback first. To enable this, see Options below
+
+The default look will scroll the notes vertically, if you'd like to simulate the Rock Band look (notes come towards you, instead of up-down), right click on the track and select 'Style: Rock Band'
+
+
+OPTIONS
+
+Double bass pedal - turns the second pedal into another bass pedal, otherwise it's a hi-hat pedal
+Force closed hi-hat - allows you to play a closed hi-hat when clicking on the Yellow Cymbal, otherwise it plays an open hi-hat
+Hit velocity controls sample volume - when enabled, drum sounds volumes are based on how hard you hit the pad/cymbal - disable for consistent volume or if your drums don't have velocity sensitive pads/cymbals
+Play-along mode - extends the form to allow you to play a Rock Band custom song (in CON/LIVE format) and play along to the drums chart
+Silence drums track - if the song you're playing along to has multitracked audio, this will disable the original drums so you only hear your own playing
+Show chart selection - displays a dropdown selection of the different charts available to play for the song loaded
+AutoPlay with chart - when enabled, Rok Drummer plays the chart being displayed - keep in mind that while the playback will match the chart, that doesn't always mean it matches the audio!
+Show metronome - displays a metronome on the front - self explanatory on how to use - up/down tempo buttons are clearly marked - green to enable metronome, red to stop metronome - you can change the metronome sound by replacing the metronome.wav file in the /res/ folder
+
+
+VOLUME LEVELS
+
+You can control the volume level of the song you're playing along to by clicking on the 'Track Volume' label
+
+You can control the volume level of the drum samples by clicking on the 'Drum Volume' label, by pressing Numpad + and Numpad -, or by pressing up and down on your drums
+
+
+LAYOUTS
+
+Rok Drummer includes a few drum layouts and the ability to use a custom layout (see below) - the layout only changes how Rok Drummer looks, and is independent of the input it expects from your particular drum kit (that is changed under Controllers -> Select drum kit)
+
+To change from one of the preset layouts, just click on it from the choices
+
+To customize the current layout, click on Layouts -> Customize layout, then click on whatever you want to move and move it around
+
+For how to use a custom layout and how to change the images and how changes affect Rok Drummer, see below
+
+
+STAGE KIT
+
+Rok Drummer can power your Rock Band Stage Kit for a nice light show while you play
+
+To enable, click on Stage Kit and select what controller number the Stage Kit is - that's it! Rok Drummer will use your Stage Kit no matter how you use it, from playing the game drums to using the keyboard to watching Rok Drummer auto-play along to a game chart
+
+The snare controls the red LEDs; the yellow tom, hi-hat cymbal and hi-hat pedal control the yellow LEDs; the blue tom and ride cymbal control the blue LEDs; the green tom and crash cymbal control the green LEDs; the kick pedal (and the hi-hat pedal if you have Double Bass Pedal enabled in Options) control the strobe light
+
+To turn on/off the fogger, press the Back button on your drumset
+
+
+CUSTOMIZING ROK DRUMMER
+
+Virtually everything that Rok Drummer uses is contained in the /res folder - you can replace any or all of the default images with your own, but make sure to keep the same file name, format and dimensions
+
+You can also customize the layout of the drum components, either by editing one of the existing layouts or by creating a custom layout. Rok Drummer looks for the images following the existing name and extensions (see the layouts/rb2/ folder for the defaults) - if you don't want a component to be visible, the image needs to be there but transparent - Rok Drummer will enable it but nothing changes visually when you click it - if you want it completely disabled, just delete that image altogether - now Rok Drummer disables that component and you can no longer click on it (i.e. when disabling a cymbal or pedal). The background image must have the drumset image in it due to .NET constraints with transparencies. The different pads/cymbals/etc images are what Rok Drummer shows when you play that component - make your images in Photoshop to fit your drumset / background image. The size of the image determines the size of the component (i.e. if you make a snare image that is 500x500, then your snare in Rok Drummer will take up 500 pixels by 500 pixels). By altering the background image, the component image and their sizes, and then repositioning them from within Rok Drummer (see above, Layouts), the possibilities for customization are pretty endless - see the Tron layout for a 'differen't idea.
+
+You can also customize the drum kit sounds. To customize an existing drum kit, just replace any of its .wav files with what you want - you can also rename it by changing the name of the folder (it's that simple). You can have any amount of drum kits by adding new folders with their drum kit sounds inside - just make sure they follow the existing format and naming convention
+
+
+FINALLY,
+
+If you minimize Rok Drummer, it'll go into your system tray and can stay there waiting for input from your drums - meaning you don't have to be looking at Rok Drummer for it to play your drum sounds - go nuts!
+
+
+And once again, this is for fun - I don't doubt there's some latency issues, and the feature set is limited - but it's just a fun little thing - don't expect too much!
+
+Enjoy

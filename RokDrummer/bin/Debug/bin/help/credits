@@ -1,0 +1,16 @@
+CREDITS:
+DJ Shepherd for the X360 library
+raynebc for all the assistance with MIDI files
+Mark Heath for the NAudio.MIDI library:
+http://naudio.codeplex.com/
+Ian Luck for the BASS audio library:
+http://www.un4seen.com/
+Bernd Niedergesaess for the BASS.NET API:
+http://bass.radio42.com/
+The SlimDX Group for the SlimDX library:
+http://www.slimdx.org/
+David for the drum velocity help:
+http://www.dwsk.co.uk/
+Racer_S for the original X360 controller emulator:
+http://tocaedit.com
+max13004 & ludox for Xinputemu v3.1

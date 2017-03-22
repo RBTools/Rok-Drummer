@@ -1,0 +1,57 @@
+Rok Drummer
+Created by TrojanNemo, dedicated to the C3 Community
+For instructions on how to use, click on Help -> How to Use
+
+-------------------
+
+CHANGE LOG:
+
+v1.5
+- Added Stage Kit support - works with whatever way you use Rok Drummer, you can click on a pad, you can use the keyboard, you can play your game drums, you can have it auto-play along to a song - either way, the Stage Kit will light up accordingly if enabled
+- Fixed layout bugs for the RB1 and the GH5 kits
+
+----------
+
+v1.4
+- Added velocity sensitivity for drums that may support it - to disable it (you don't like it or your drums don't support it) go to Options and uncheck 'Hit velocity controls sample volume' - thanks to Phase Shift developer David for his guidance on this
+- Improved extracting and reading of DTA and MOGG files for increased speed and reduced hard drive usage - thanks to Maxton for the suggestion and code sample
+
+----------
+
+v1.3
+- Added support for PS3 Guitar Hero 5 kit
+- Added Guitar Hero 5 layout
+- Added (rough) simulated Rock Band style chart style - right-click on the track and select from the two choices
+- Force closed hi-hat now works when using a drum kit as well as when using the mouse and keyboard to play the drum samples
+- Overdrive phrases are now drawn on the track, along with being noted on the notes themselves
+- Modified the way drum fills are drawn
+- Modified default RB2+ layout for a nicer look
+- A few other minor improvements
+
+----------
+
+v1.2
+- Vastly improved performance when drawing charts - should have reduced or eliminated all flickering
+- Vastly improved overall performance and efficiency - should have greatly reduced CPU usage
+- Added ability to select between all charted difficulties
+- Added ability to select Pro Drums or Drums when drawing the game charts
+- Added ability to have Rok Drummer AutoPlay with the game charts - but temper your expectations, the limited kit sounds we have don't exactly match the originals!
+- Added ability to move forwards or backwards through the song by using the scroll wheel on your mouse
+- Added ability to start/pause playback by pressing the Start button on your drum kit
+- Added ability to choose from three preset layouts - Ion, RB1 and RB2/RB3 - and the ability to use a Custom layout
+- Added ability to easily customize the current layout to your heart's content - see Help document for instructions
+- A few other improvements
+
+----------
+
+v1.1
+- Added support for Xbox 360 Rock Band 1 wired drums - find it under Controllers -> Select drum kit
+- Added support for e-kits using the PlayStation 3 MIDI PRO Adapter (MPA) - find it under Controllers -> Select drum kit
+- Fixed displaying of toms with non-standard pro drum markers
+- Now remembers your last used kit
+- Few other improvements
+
+----------
+
+v1.0 - Initial public release
+- See Help document for a list of features and how to use them
